@@ -1,0 +1,5 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: linear-gradient(135deg, #0038FD, #00D1FF);
+}
