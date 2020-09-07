@@ -4,20 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./public/css/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./public/css/styles-desktop.css">
 
     <title>Taches</title>
 </head>
 <body>
-    <section>
-        <span>Sticky Header!</span>
-      </section>
     <header>
-        <h1>taches</h1>
-        <nav>
-            <a href=#>Login</a>
-            <a href=#>Sign Up</a>
-        </nav>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h1 id="title" class="title" style="color: transparent;">tâches</h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <nav>
+                <ui>
+                    <li><a class="login" href="#">Login</a></li>
+                    <li><a class="sign-up"href="#">Sign Up</a></li>
+                </ui>
+            </nav>
+        </div>
     </header>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 class="hero-text-title">tâches</h1>
+            <p class="hero-text-paragraph">
+                Organize your life,<br>
+                visualize your workflow,<br>
+                get things done.
+            </p>
+            <button class="button-sign-up">Sign Up - Free</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12" style="width: 48vw;">
+            <img class="scalar-img" src="./public/assets/images/Vector.svg" alt="Blob">
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="arrow bounce">
+            <img src="./public/assets/images/down-arrow.svg" alt="Scroll Down" 
+            style="width: 3%;">
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4" 
+        style="display: flex; 
+               align-content: center; 
+               width: 100vw;
+               padding: 10% 0% 10% 0%;">
+        <div class="card" style="margin: 0 5% 0 5%;">
+            <div class="container">
+                <img src="./public/assets/images/Ant Worker 1.svg" alt="Ant Builder" 
+                style="width: 100%;
+                       background-color: white;
+                       border-radius: 16px;
+                       align-self: center;">
+                <h4 class="card-title" style="align-self: center;">Create New Projects</h4> 
+                <p class="card-paragraph">Lorem ipsum dolor sit amet,
+                                          consectetur adipiscing elit,
+                                          sed do eiusmod tempor incididunt 
+                                          ut labore et dolore magna aliqua. </p> 
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <img src="./public/assets/images/Ant Worker 2.svg" alt="Ant Builder" 
+                style="width: 100%;
+                       background-color: white;
+                       border-radius: 16px;">
+                <h4 class="card-title" style="align-self: center;">Track Progress</h4> 
+                <p class="card-paragraph">Lorem ipsum dolor sit amet,
+                                          consectetur adipiscing elit,
+                                          sed do eiusmod tempor incididunt 
+                                          ut labore et dolore magna aliqua. </p>  
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <img src="./public/assets/images/Ant Worker 3.svg" alt="Ant Builder" 
+                style="width: 100%;
+                       background-color: white;
+                       border-radius: 16px;">
+                <h4 class="card-title" style="align-self: center;">Schedule Deadlines</h4> 
+                <p class="card-paragraph">Lorem ipsum dolor sit amet,
+                                          consectetur adipiscing elit,
+                                          sed do eiusmod tempor incididunt 
+                                          ut labore et dolore magna aliqua. </p> 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This script needs a bit of work so that I can make the navbar sticky at the top.-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > 260) {
+            document.getElementById("title").style.color = "#202020";
+          } else {
+            document.getElementById("title").style.color = "transparent";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+
 </body>
 </html>
